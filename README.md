@@ -1,4 +1,4 @@
-# PracticaSQL
+# Practica Persistencia de Queries
 Miriam Colino Ruipérez-201804334 3ºA GITT 
 
 En esta práctica se pedía un desarrollo de una App de Spring Boot que incluya una funcionalidad que permita persistir información utilizando la librería Spring Data JDBC con una base de datos H2. El módulo de persistencia debe incluir las operaciones (INSERT, UPDATE,  SELECT y DELETE)
