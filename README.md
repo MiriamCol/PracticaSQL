@@ -12,9 +12,27 @@ Las operaciones debe de incluir como mínimo dos operaciones “JOINS”  utiliz
 
 - Las dos operaciones con @Query utilizo el atributo id y edad.
 
-Ejemplo GET localhost:8080/api/v1/participants/:
+#Ejemplos funcionalidad 
+------------------------
+- GET localhost:8080/api/v1/participants/
+(se mostrarían los 9 introducidos)
 
 ![img.png](img.png)
+
+- PUT localhost:8080/api/v1/participants/C00001/
+Si modificamos el primer participante (Miriam) y le cambiamos el nombre y la edad, al hacer PUT se actualiza:
+
+![img_1.png](img_1.png)
+
+- DELETE localhost:8080/api/v1/participants/C00001/
+![img_2.png](img_2.png)
+al mostrar la lista completa, se nos ha eliminado el primero
+
+- GET localhost:8080/api/v1/participants/d45002/
+![img_3.png](img_3.png)
+
+
+
 
 
 
