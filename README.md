@@ -28,7 +28,8 @@ Si modificamos el primer participante (Miriam) y le cambiamos el nombre y la eda
 ![img_2.png](img_2.png)
 al mostrar la lista completa, se nos ha eliminado el primero
 
-- GET localhost:8080/api/v1/participants/d45002/
+- GET localhost:8080/api/v1/participants/d45002/ 
+Mostramos el participante con el id introducido
 ![img_3.png](img_3.png)
 
 
