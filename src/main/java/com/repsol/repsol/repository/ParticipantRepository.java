@@ -14,5 +14,8 @@ public interface ParticipantRepository extends CrudRepository<Participant, Strin
     @Query("INSERT INTO PARTICIPANT VALUES(:participant.id, :participant.name_participant, :participant.age, :participant.description")
     public Participant createParticipant(String id, String name_participant, int age, String description);
     */
+
+    @Query("SELECT * FROM PARTICIPANT WHERE PARTICIPANT.ID=:id")
+    public Iterable<Participant> retrieveParticipant(String id);
 }
 

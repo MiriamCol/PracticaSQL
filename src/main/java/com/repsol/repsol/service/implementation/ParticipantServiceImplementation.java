@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class ParticipantServiceImplementation implements ParticipantService {
     @Autowired
     private ParticipantRepository participantRepository;
-    public Iterable<Participant> getParticipants(String age)
+    public Iterable<Participant> retrieveParticipants(String age)
     {
         if(age==null)
             return participantRepository.findAll();
@@ -20,6 +20,24 @@ public class ParticipantServiceImplementation implements ParticipantService {
             return participantRepository.getParticipantByAge(ageInt);
 
         }
+    }
+    @Override
+    public Participant retrieveParticipant(String id)
+    {
+        Participant response=null;
+        if(participantRepository.existsById(id))
+        {
+            Iterable<Participant> participants= participantRepository.retrieveParticipant(id);
+
+            for(Participant participant:participants)
+            {
+                response=participant;
+            }
+            return response;
+
+        }
+        return response;
+
     }
 
     @Override
